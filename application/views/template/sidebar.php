@@ -16,10 +16,35 @@
                         </a>
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="<?php echo site_url('kategori'); ?>">Kategori</a>
+                                <a class="nav-link" href="<?php echo site_url('satuan'); ?>">Satuan</a>
+                                <a class="nav-link" href="<?php echo site_url('supplier'); ?>">Supplier</a>
+                                <a class="nav-link" href="<?php echo site_url('kostumer'); ?>">Kostumer</a>
+                                <a class="nav-link" href="<?php echo site_url('barang'); ?>">Barang</a>
                                 <a class="nav-link" href="<?php echo site_url('user'); ?>">User</a>
-                                <a class="nav-link" href="<?php echo site_url('admin/surat_masuk'); ?>">Surat Masuk</a>
-                                <a class="nav-link" href="<?php echo site_url('admin/surat_keluar'); ?>">Surat Keluar</a>
-                                <a class="nav-link" href="<?php echo site_url('admin/disposisi'); ?>">Disposisi</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            Pages
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                    Laporan Data
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="<?php echo site_url('kategori/kategorilap'); ?>">Laporan Kategori</a>
+                                        <a class="nav-link" href="<?php echo site_url('satuan/satuanlap'); ?>">Laporan Satuan</a>
+                                        <a class="nav-link" href="<?php echo site_url('supplier/supplierlap'); ?>">Laporan Supplier</a>
+                                        <a class="nav-link" href="<?php echo site_url('kostumer/kostumerlap'); ?>">Laporan Kostumer</a>
+                                        <a class="nav-link" href="<?php echo site_url('barang/baranglap'); ?>">Laporan Barang</a>
+                                        <a class="nav-link" href="<?php echo site_url('user/userlap'); ?>">Laporan User</a>
+                                    </nav>
+                                </div>
                             </nav>
                         </div>
                         <div class="sb-sidenav-menu-heading">Addons</div>
